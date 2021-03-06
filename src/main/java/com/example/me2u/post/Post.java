@@ -18,6 +18,8 @@ public class Post {
     @CreationTimestamp
     private LocalDate createdOn;
     private String message;
+    private String video;
+    private String videoType;
 
     public Post() {
     }

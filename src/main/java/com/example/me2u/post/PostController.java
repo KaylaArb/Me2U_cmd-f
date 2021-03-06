@@ -19,7 +19,7 @@ public class PostController {
         postService.addPost(post);
     }
 
-    @GetMapping("/search")
+    @GetMapping("/all")
     public Iterable<Post> showPostings() {
         return postService.getAllPostings();
     }
