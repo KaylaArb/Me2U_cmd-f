@@ -1,13 +1,16 @@
-package com.example.me2u.post;
+package com.example.me2u.controller;
 
+import com.example.me2u.model.Post;
+import com.example.me2u.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/api")
 public class PostController {
 
-    PostService postService;
+    private PostService postService;
 
     @Autowired
     public void setPostService(PostService postService) {

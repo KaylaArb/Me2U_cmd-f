@@ -1,4 +1,4 @@
-package com.example.me2u.post;
+package com.example.me2u.model;
 
 
 import org.hibernate.annotations.CreationTimestamp;

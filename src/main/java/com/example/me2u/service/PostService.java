@@ -1,5 +1,7 @@
-package com.example.me2u.post;
+package com.example.me2u.service;
 
+import com.example.me2u.dao.PostRepository;
+import com.example.me2u.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,9 +11,7 @@ public class PostService {
     PostRepository postRepository;
 
     @Autowired
-    public void setPostRepository(PostRepository postRepository) {
-        this.postRepository = postRepository;
-    }
+    public void setPostRepository(PostRepository postRepository) {this.postRepository = postRepository;}
 
     public void addPost(Post post) {
         try {
