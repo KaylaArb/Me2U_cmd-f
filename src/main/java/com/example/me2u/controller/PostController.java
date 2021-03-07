@@ -18,8 +18,9 @@ public class PostController {
     }
 
     @PostMapping("/add")
-    public void addPosting(@RequestBody Post post) {
+    public String addPosting(@RequestBody Post post) {
         postService.addPost(post);
+        return "Success!";
     }
 
     @GetMapping("/all")
