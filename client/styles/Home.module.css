@@ -15,8 +15,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
+}
+.mainChild{
+   margin:60px;
+}
 .title a:hover,
 .title a:focus,
 .title a:active {
