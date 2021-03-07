@@ -23,6 +23,11 @@
     overflow: hidden;
 }
 
+.grid {
+    display: flex;
+    padding-left: 65px;
+    width: 100%;
+}
 
 .caraPhoto {
     margin-top: 15px;
@@ -37,6 +42,28 @@
         -ms-interpolation-mode: nearest-neighbor;
         
 }
+
+@media (min-width: 1500px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 65px;
+        width: 100%;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+  }
+
+
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
 
 
 
