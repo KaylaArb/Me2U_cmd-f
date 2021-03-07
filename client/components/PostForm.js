@@ -2,10 +2,10 @@ import styles from "../styles/PostForm.module.css";
 import Head from "next/head";
 import { useState } from 'react';
 import { useRouter } from "next/router"
+import Router from "next/router";
 
 export default function PostForm() {
     const [isSort, setIsSort] = useState(null);
-    const router = useRouter()
 
     function submitPost() {
         let namePost = document.getElementById("name").value;
@@ -19,11 +19,11 @@ export default function PostForm() {
         };
         fetch('https://cmdf-backend.herokuapp.com/api/add', requestOptions)
             .then(response => response.json())
-            .then(response => {
-                router.reload(window.location.pathname)
-                console.log(response)
-                console.log("it worked")
-            })
+        Router.reload(window.location.pathname)
+        window.scrollTo({
+            top: 1915,   
+            behavior: 'smooth'
+        })
     }
 
     return (
@@ -49,15 +49,9 @@ export default function PostForm() {
                         <textarea type="text" id="messageBox" required className={styles.messageBox} />
                         <button type="button" onClick={submitPost} className={styles.submitButton}> Submit</button>
                     </div>
-
                 </div>
-
-
-
             </div>
-
         </div>
-
     )
 
 }
