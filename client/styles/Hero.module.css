@@ -1,5 +1,59 @@
 .heroContainer {
     width: 100%;
     height: calc(100vh - 85px);
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+}
+.heroPart1{
+    display:flex;
+    flex-direction: row;
+}
+.subpart {
+   width:400px;
+}
+.subpart h1{
+   color:rgb(248, 83, 61); 
+   font-weight: 0;
+}
+
+.heroPart2{
+    display: flex;
+    flex-direction: row;
+    margin-top:50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:50px;
+}
+.heroPart2 p{
+    width:200px;
+}
+/* .subpart img{
+    width:100px;
+} */
+.heroLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left:20px;
+}
+.paragraph{
+    font-family: poppins;
+    font-size: 36px;
+    color:grey;
+}
+.heading{
+    font-weight: 0px;
+    font-size: 48px;
+    width:700px;
+}
+.buttonS{
+    color:black;
     background-color: pink;
+    border: 1px solid pink;
+    border-radius: 30px;
+    width:fit-content;
+    padding:10px;
+    margin-top:30px;
+    margin-left:10px;
 }
