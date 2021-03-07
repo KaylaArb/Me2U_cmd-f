@@ -5,13 +5,13 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 2.5rem 0;
 }
 
 .postContent {
     max-width: 1700px;
     width: 100%;
     height: auto;
-    margin: 5rem 02rem;
     /* background-color: pink; */
     display: flex;
     flex-direction: row;
