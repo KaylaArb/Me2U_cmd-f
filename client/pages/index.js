@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import PostForm from "../components/PostForm";
 import Gallery from "../components/Gallery";
 
-export default function Home() {
+export default function Home({data}) {
     return (
         <div className={styles.container}>
             <Head>
@@ -18,12 +18,29 @@ export default function Home() {
             </Head>
             <Header/>
             <main className={styles.main}>
+                <div className={styles.mainChild}>
                 <Hero/>
+                </div>
+                <div className={styles.mainChild}>
                 <PostForm/>
-                <Gallery/>
+                </div>
+               
+                <Gallery data={data}/>
+                
             </main>
 
             <Footer/>
         </div>
     )
+}
+
+export async function getServerSideProps() {
+    const res = await fetch('https://cmdf-backend.herokuapp.com/api/all')
+    const data = await res.json()
+    console.log("worked here")
+    console.log(data)
+
+    return {
+        props: {data},
+    }
 }
