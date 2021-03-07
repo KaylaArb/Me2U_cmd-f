@@ -1,14 +1,111 @@
 .postContainer {
     width: 100%;
     height: auto;
-    background-color: black;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .postContent {
-    max-width: 1200px;
+    max-width: 1700px;
+    width: 100%;
     height: auto;
-    margin: 5rem 0;
-    background-color: pink;
+    margin: 5rem 02rem;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.image {
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+.postImage {
+    width: auto;
+    height: 85%;
+
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+.submitButton {
+    border-radius: 10px;
+    border:none;
+    padding:10px 50px;
+    margin: 15px 0 0 0;
+    outline: none;
+    width: 30%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.topicButton {
+    border-radius: 10px;
+    margin: 15px;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.topicButton:active {
+    background-color:#FFEBE1; 
+}
+
+.messageBox {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 250px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.messageBox:focus {
+    outline: none;
+}
+
+.inputBox {
+    border-radius: 10px;
+    border: .5px solid black;
+    height: 50px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.inputBox:focus {
+    outline: none;
+}
+
+.formTitle {
+    color: #C4C4C4;
+    font-size: 36px;
+    font-family: Istok Web;
+    font-weight: bolder;
+    margin:0;
 }

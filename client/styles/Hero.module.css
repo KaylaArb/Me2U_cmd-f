@@ -1,5 +1,5 @@
 .heroContainer {
     width: 100%;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 85px);
     background-color: pink;
 }

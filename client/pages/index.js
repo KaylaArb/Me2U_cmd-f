@@ -12,6 +12,9 @@ export default function Home() {
             <Head>
                 <title>Me2U</title>
                 <link rel="icon" href="/favicon.ico"/>
+                <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'></link>
+                <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Istok+Web" />
+                <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
             </Head>
             <Header/>
             <main className={styles.main}>
