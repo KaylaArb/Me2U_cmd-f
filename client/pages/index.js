@@ -19,13 +19,12 @@ export default function Home({data}) {
             </Head>
             <Header/>
             <main className={styles.main}>
-                <div className={styles.mainChild}>
+                <div >
                 <Hero/>
+                </div>
                 <About/>
-                </div>
-                <div className={styles.mainChild}>
                 <PostForm/>
-                </div>
+                
                
                 <Gallery data={data}/>
                 
