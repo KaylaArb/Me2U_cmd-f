@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h3 {
+  font-size: 26px;
+  margin: 15px;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+}
+
+textarea[type="text"]
+{
+    font-size:24px;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: 'Poppins';
+  font-weight: lighter;
+}
