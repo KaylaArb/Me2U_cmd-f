@@ -20,6 +20,7 @@ public class Post {
     private String message;
     private String video;
     private String videoType;
+    private String photo;
 
     public Post() {
     }
