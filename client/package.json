@@ -10,8 +10,13 @@
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "next": "10.0.8",
+    "nuka-carousel": "^4.7.5",
+    "pure-react-carousel": "^1.27.6",
     "react": "17.0.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "17.0.1",
+    "react-items-carousel": "^2.8.0",
+    "react-leaf-carousel": "^2.0.3",
     "react-responsive-masonry": "^2.1.1"
   }
 }
