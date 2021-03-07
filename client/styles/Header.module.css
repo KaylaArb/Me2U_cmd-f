@@ -143,3 +143,16 @@ header.active {
 .userMenu.active {
     display: block;
 }
+@media (max-width: 800px) {
+
+    .navLinks {
+        display: none;
+    }
+    
+
+
+    
+} 
+
+/* @media (max-width: 475px) { */
+    

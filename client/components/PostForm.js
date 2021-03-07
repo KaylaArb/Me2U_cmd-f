@@ -39,7 +39,7 @@ export default function PostForm() {
                         <h3>Name</h3>
                         <input type="text" id="name" required className={styles.inputBox} />
                         <h3>Category</h3>
-                        <div>
+                        <div className={styles.formatButtons}>
                             <button type="button" onClick={() => setIsSort('Mental Health')} className={styles.topicButton}> Mental Health </button>
                             <button type="button" onClick={() => setIsSort('Education')} className={styles.topicButton}> Education </button>
                             <button type="button" onClick={() => setIsSort('Work')} className={styles.topicButton}> Work </button>

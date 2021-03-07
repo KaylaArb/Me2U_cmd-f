@@ -36,4 +36,13 @@ h2 {
   font-size: 48px;
   font-family: 'Poppins';
   font-weight: lighter;
+  text-align: center;
+}
+
+@media (max-width: 475px) {
+
+  h2 {
+    font-size: 38px;
+  }
+  
 }
