@@ -40,13 +40,14 @@
     display: inline-block;
 }
 
-.masonry {
+/* .masonry {
     height: auto;
     width: 100%;
-    column-count: 4;
-}
+   
+    
+} */
+
 .item {
-    height: auto;
-    width: auto;
-    display: inline-block;
+    width: 100%;
+    display: block;
 }
