@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Header from "../components/Header";
 import PostForm from "../components/PostForm";
 import Gallery from "../components/Gallery";
+import About from "../components/About";
 
 export default function Home({data}) {
     return (
@@ -19,6 +20,7 @@ export default function Home({data}) {
             <Header/>
             <main className={styles.main}>
                 <Hero/>
+                <About/>
                 <PostForm/>
                 <Gallery data={data}/>
             </main>

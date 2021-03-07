@@ -53,6 +53,7 @@
 
 .submitButton {
     border-radius: 10px;
+    background: #FFEBE1;
     border:none;
     padding:10px 50px;
     margin: 15px 0 0 0;
@@ -60,57 +61,51 @@
     width: 250px;
     font-size: 26px;
     font-weight: bold;
-    background: #FFEBE1;
 }
 
-.topicButton {
-    border-radius: 10px;
-    margin: 15px;
-    border: none;
-    width: 150px;
-    padding: 10px;
-    outline: none;
-    font-weight: bold;
-    font-size: 18px;
+.para {
+    font-size: 22px;
+    font-family: "Poppins";
 }
 
-.topicButton:active {
-    background-color:#FFEBE1; 
+.listText {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+    
 }
 
-.messageBox {
-    border-radius: 10px;
-    border: 1px solid black;
-    height: 250px;
-    resize: none;
-    margin-bottom: 15px;
+.formContainer ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 75px;
+    padding: 0;
+    
 }
 
-.messageBox:focus {
-    outline: none;
+.formContainer li:before {
+    content: "•"; 
+    color: #EC744A;
+    margin-right: 25px;
+    font-size: 6em;
+    vertical-align: bottom;
+    position: relative;
+    top: -20px;
+    /* font-size: 6em;
+    margin-right: 15px;
+    vertical-align: -webkit-baseline-middle; */
+
 }
 
-.inputBox {
-    border-radius: 10px;
-    border: .5px solid black;
-    height: 50px;
-    width: 50%;
-    margin-bottom: 15px;
-}
-
-.inputBox:focus {
-    outline: none;
-}
-
-.formTitle {
-    color: #C4C4C4;
-    font-size: 36px;
-    font-family: Istok Web;
-    font-weight: bolder;
-    margin:0;
-}
 
 @media (max-width: 1575px) {
+
+    .para {
+        width: 60%;
+        text-align: center;
+    }
 
     .postContent {
         flex-direction: column;
@@ -138,6 +133,11 @@
   }
 
 @media (max-width: 700px) {
+
+    .para {
+        width: 75%;
+        text-align: center;
+    }
 
     .postImage {
         width: auto;
