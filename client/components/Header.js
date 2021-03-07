@@ -32,17 +32,20 @@ export default function Header() {
                     })}>
                         About
                             </a>
-                    <a className={styles.linksUser}>
+                    <a className={styles.linksUser} onClick={() => window.scrollTo({
+                        top: 1600,
+                        behavior: 'smooth'
+                    })}>
                         Features
                                 </a>
                     <a className={styles.linksUser} onClick={() => window.scrollTo({
-                        top: 1700,
+                        top: 2250,
                         behavior: 'smooth'
                     })}>
                         Create
                                 </a>
                     <a className={styles.linksUser} onClick={() => window.scrollTo({
-                        top: 2700,
+                        top: 3200,
                         behavior: 'smooth'
                     })}>
                         Feed

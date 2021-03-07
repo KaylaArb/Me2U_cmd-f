@@ -31,7 +31,8 @@ export default function PostForm() {
             <h2>Create Your First Post</h2>
             <div className={styles.postContent}>
                 <div className={styles.image}>
-                    <img src="/postImage.jpg"  className={styles.postImage} />
+                    <img src="/circle.png"  className={styles.circleImage} />
+                    <img src="/productImage1.png"  className={styles.postImage} />
                 </div>
                 <div className={styles.form}>
                     <div className={styles.formContainer}>

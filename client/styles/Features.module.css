@@ -1,0 +1,38 @@
+.featureContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem 0;
+
+}
+
+.featureContent {
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1600px;
+    z-index: 4;
+}
+
+/* #container {
+    height: 200px;
+    width: 800px;
+    border: 1px solid #333;
+    overflow: hidden;
+    margin: 25px auto;
+} */
+
+.photoCara {
+    margin-top: 15px;
+}
+
+
+

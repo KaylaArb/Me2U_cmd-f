@@ -15,8 +15,18 @@
     flex-direction: column;
     justify-content: center;
     max-width: 1700px;
-
 }
+
+.circleImage {
+    position: absolute;
+    right:0;
+    z-index: 2;
+}
+
+.mainImage {
+    z-index: 3;
+}
+
 .heroPart1{
     width: 100%;
     display:flex;
@@ -65,12 +75,15 @@
     width:700px;
 }
 .buttonS{
-    color:black;
-    background-color: pink;
-    border: 1px solid pink;
-    border-radius: 30px;
-    width:fit-content;
-    padding:10px;
-    margin-top:30px;
-    margin-left:10px;
+
+    border-radius: 10px;
+    border:none;
+    padding:10px 50px;
+    margin: 15px 0 0 0;
+    outline: none;
+    width: 250px;
+    font-size: 26px;
+    font-weight: bold;
+    background: #FFEBE1;
+    cursor: pointer;
 }

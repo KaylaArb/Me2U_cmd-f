@@ -9,9 +9,13 @@ export default function Hero() {
                     <div className={styles.heroLeft}>
                         <h1 className={styles.heading}>WE ARE HERE TO SUPPORT EACH OTHER</h1>
                         <h3 className={styles.paragragh}>Share your experience. Share your story </h3>
-                        <button className={styles.buttonS}>Share now</button>
+                        <button className={styles.buttonS} onClick={() => window.scrollTo({
+                            top: 2250,
+                            behavior: 'smooth'
+                        })}>Share now</button>
                     </div>
-                    <img src="/main.png"></img>
+                    <img src="/hero.png" className={styles.mainImage}></img>
+                    <img src="/circle.png" className={styles.circleImage} />
                 </div>
                 <div className={styles.heroPart2}>
                     <div className={styles.subpart}>
@@ -38,8 +42,8 @@ export default function Hero() {
                         <p>Our qualified mentors will guide you with any question you have</p>
                     </div>
                     <div className={styles.subpart}>
-                    <img alt="vector" src="/vector5.png"/>
-                </div>
+                        <img alt="vector" src="/vector5.png" />
+                    </div>
                 </div>
             </div>
 

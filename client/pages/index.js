@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import PostForm from "../components/PostForm";
 import Gallery from "../components/Gallery";
 import About from "../components/About";
+import Features from '../components/Features';
 
 export default function Home({data}) {
     return (
@@ -19,13 +20,10 @@ export default function Home({data}) {
             </Head>
             <Header/>
             <main className={styles.main}>
-                <div >
                 <Hero/>
-                </div>
                 <About/>
+                <Features/>
                 <PostForm/>
-                
-               
                 <Gallery data={data}/>
                 
             </main>

@@ -8,7 +8,7 @@ export default function About() {
             <h2>About</h2>
             <div className={styles.postContent}>
                 <div className={styles.image}>
-                    <img src="/postImage.jpg" className={styles.postImage} />
+                    <img src="/productImage2.png" className={styles.postImage} />
                 </div>
                 <div className={styles.form}>
                     <div className={styles.formContainer}>

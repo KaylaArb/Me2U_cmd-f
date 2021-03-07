@@ -10,7 +10,7 @@
 }
 
 .postContent {
-    max-width: 1700px;
+    max-width: 1600px;
     width: 100%;
     height: auto;
     /* background-color: pink; */
@@ -42,6 +42,14 @@
 .postImage {
     width: auto;
     height: 500px;
+    z-index: 3;
+}
+
+.circleImage {
+    position: absolute;
+    left: -50px;
+    top: 2200px;
+    z-index: 3;
 }
 
 .formContainer {
@@ -81,7 +89,7 @@
 
 .messageBox {
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #DBDBDB;
     height: 250px;
     resize: none;
     margin-bottom: 15px;
@@ -93,7 +101,7 @@
 
 .inputBox {
     border-radius: 10px;
-    border: .5px solid black;
+    border: .5px solid #DBDBDB;
     height: 50px;
     width: 50%;
     margin-bottom: 15px;
