@@ -5,7 +5,6 @@ import com.example.me2u.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequestMapping("/api")
 public class PostController {
@@ -19,7 +18,8 @@ public class PostController {
 
     @PostMapping("/add")
     public String addPosting(@RequestBody Post post) {
-        postService.addPost(post);
+        Integer postId = postService.addPost(post);
+        System.out.println("Account added = " + postId);
         return "Success!";
     }
 

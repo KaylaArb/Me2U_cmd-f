@@ -13,9 +13,10 @@ public class PostService {
     @Autowired
     public void setPostRepository(PostRepository postRepository) {this.postRepository = postRepository;}
 
-    public void addPost(Post post) {
+    public Integer addPost(Post post) {
         try {
-            postRepository.save(post);
+            Post newPost = postRepository.save(post);
+            return newPost.getId();
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("Post could not be saved : " + e.getMessage());
         }
